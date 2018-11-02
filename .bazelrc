@@ -1,0 +1,5 @@
+build --strict_java_deps=warn
+build --java_toolchain=//toolchains:default_java_toolchain
+build --host_java_toolchain=//toolchains:default_java_toolchain
+build --host_javabase=//toolchains:jdk8
+build --javabase=//toolchains:jdk8

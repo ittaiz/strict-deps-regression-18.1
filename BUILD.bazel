@@ -1,0 +1,27 @@
+package(default_visibility = ["//visibility:public"])
+
+java_library(
+    name = "main_dependencies",
+    srcs = ["Stub.java"],
+    deps = [
+        "@org_atmosphere_wasync//jar",
+    ],
+)
+
+java_library(
+    name = "automation",
+    srcs = [
+        "DefaultAtmosphere.java",
+    ],
+    deps = [
+        ":main_dependencies",
+    ],
+)
+
+java_library(
+    name = "foo",
+    srcs = ["Foo.java"],
+    deps = [
+        ":automation"
+    ],
+)
