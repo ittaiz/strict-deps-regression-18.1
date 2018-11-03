@@ -1,5 +1,4 @@
-workspace(name = "velocity_infra")
-load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+workspace(name = "foo")
 load("@bazel_tools//tools/build_defs/repo:java.bzl", "java_import_external")
 
 java_import_external(
